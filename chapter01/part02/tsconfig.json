@@ -1,0 +1,63 @@
+// ts 配置文件
+{
+  /*
+    include：用来制定哪些 ts 文件需要被编译
+    路径： ** 表示任意目录
+          * 表示任意文件
+  */
+
+  "include":[
+    "./src/**/*"
+  ],
+  "exclude": [
+    // "./src/hello/**/*"
+  ],
+  "compilerOptions": {
+
+    // target 用来表示 ts 被编译成的 ES 版本
+    "target": "ES6",
+
+    // 指定要使用的模块化的规范
+    "module": "es6",
+
+    // lib 用来指定项目中要使用的库，如果是在浏览器中运行的项目，默认不用配置
+    // "lib": ["ES6","DOM"]
+
+    // outDir 用来指定编译后文件所在的目录
+    "outDir": "./dist",
+
+    // outFlie 将代码合并为一个文件
+    // 设置 outFile 后，所有的全局作用域中的代码都会合并到一个文件当中
+    // "outFile": "./dist/app.js"
+
+    // 是否对 js 文件进行编译，默认是 false
+    "allowJs": true,
+
+    // 是否检查 js 代码是否符合语法规范，默认是 false
+    "checkJs": true,
+
+    // 是否移除注释，默认是 false
+    "removeComments": true,
+
+    // 是否生成编译后的文件
+    "noEmit": false,
+
+    // 当有错误的时候，是否生成编译后的文件
+    "noEmitOnError": true,
+
+    // 用来设置编译后的文件是否使用严格模式，默认 false
+    "alwaysStrict": true,
+
+    // 不允许隐式的 any 类型，默认为 false
+    "noImplicitAny": true,
+
+    // 不允许不明确类型的 this，默认为 false
+    "noImplicitThis": true,
+
+    // 严格的检查空值 null
+    "strictNullChecks": true,
+    
+    // 所有严格检查的总开关，只要这个开了，上边四个都可以省略不写
+    // "strict": true
+  }
+}
