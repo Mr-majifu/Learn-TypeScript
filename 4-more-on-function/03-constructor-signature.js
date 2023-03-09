@@ -1,3 +1,4 @@
+"use strict";
 // class Ctor{
 //   s: string
 //   constructor(s:string) {
@@ -7,11 +8,10 @@
 function fn(ctor) {
     return new ctor('Hello');
 }
-var Person = /** @class */ (function () {
-    function Person(name) {
+class Person {
+    constructor(name) {
         this.name = name;
     }
-    return Person;
-}());
-var f = fn(Person);
+}
+const f = fn(Person);
 console.log(f.name);

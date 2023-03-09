@@ -1,5 +1,6 @@
+"use strict";
 {
-    var arr = [1, 2, 3];
-    var arr2 = [1, 2, 3];
-    var arr3 = ['a', 'b', 'c'];
+    const arr = [1, 2, 3];
+    const arr2 = [1, 2, 3];
+    const arr3 = ['a', 'b', 'c'];
 }

@@ -1,6 +1,6 @@
+"use strict";
 {
     function greet(name) {
-        console.log('hello ' + name.toLocaleUpperCase());
+        console.log('hello' + name.toLocaleUpperCase());
     }
-    greet('chenzihao')
 }

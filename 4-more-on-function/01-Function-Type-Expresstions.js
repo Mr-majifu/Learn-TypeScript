@@ -1,3 +1,4 @@
+"use strict";
 function greeter(fn) {
     fn("Helle TS Function");
 }
