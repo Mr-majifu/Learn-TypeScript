@@ -1,8 +1,7 @@
-function filter2<Type, Func extends (arg: Type) => boolean>(
-  arr: Type[],
-  func: Func
-): Type[] {
-  return arr.filter(func);
-}
+// function getName(this: {name: string}) {
+//   return this.name;
+// }
 
-filter2(['abc'],(x:string) => x === 'a')
+// const person = { name: "Alice" };
+
+// console.log(getName.call(person)); 

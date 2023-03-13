@@ -1,5 +1,6 @@
 "use strict";
-function filter2(arr, func) {
-    return arr.filter(func);
-}
-filter2(['abc'], (x) => x === 'a');
+// function getName(this: {name: string}) {
+//   return this.name;
+// }
+// const person = { name: "Alice" };
+// console.log(getName.call(person)); 
